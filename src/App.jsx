@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import React from "react";
-import GetStarted1 from "./componenets/GetStarted1";
-import GetStarted2 from "./componenets/GetStarted2";
-import Register from "./componenets/Register";
-import Home from "./componenets/Home";
-import SingleCourse from "./componenets/SingleCourse";
-import SingleOngoingCourse from "./componenets/SingleOngoingCourse";
-import Courses from "./componenets/Courses";
-import Login from "./componenets/Login";
+import GetStarted1 from "./pages/GetStarted1";
+import GetStarted2 from "./pages/GetStarted2";
+import Register from "./pages/Register";
+import Home from "./pages/Home";
+import SingleCourse from "./pages/SingleCourse";
+import SingleOngoingCourse from "./pages/SingleOngoingCourse";
+import Courses from "./pages/Courses";
+import Login from "./pages/Login";
 
 const App = () => {
   return (
