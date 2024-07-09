@@ -8,6 +8,7 @@ import SingleCourse from "./pages/SingleCourse";
 import SingleOngoingCourse from "./pages/SingleOngoingCourse";
 import Courses from "./pages/Courses";
 import Login from "./pages/Login";
+import AuthLayout from "./componenets/AuthLayout";
 
 const App = () => {
   return (
@@ -15,8 +16,10 @@ const App = () => {
       <Route path="/get-started-1" element={<GetStarted1 />} />
       <Route index element={<GetStarted1 />} />
       <Route path="/get-started-2" element={<GetStarted2 />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
+      <Route path="/auth" element={<AuthLayout/>}>
+      <Route path="/auth/login" element={<Login />} />
+      <Route path="/auth/register" element={<Register />} />
+      </Route>
       <Route path="/home" element={<Home />} />
       <Route path="/courses" element={<Courses />} />
       <Route path="/single-course" element={<SingleCourse />} />
