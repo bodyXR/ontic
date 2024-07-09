@@ -11,7 +11,7 @@ const Login = () => {
       <Stack
         sx={{
           width: "100vw",
-          height: "100vh",
+          height: "95vh",
           bgcolor: "#FFFFFF",
           display: "flex",
           alignItems: "center",
@@ -52,7 +52,7 @@ const Login = () => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "space-between",
-            gap: "4rem",
+            gap: "2rem",
           }}
         >
           <ButtonComponent text={"Login"} />

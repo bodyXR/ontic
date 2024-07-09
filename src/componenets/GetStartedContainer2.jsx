@@ -37,7 +37,7 @@ const GetStartedContainer2 = () => {
       <Stack sx={{flexDirection:'row',flexWrap:'wrap',gap:'10px',mt:'20px',justifyContent:'center'}}>
         {interests.map((el)=><Cell name={el}/>)}
       </Stack>
-      <ButtonWithArrow path='/login' color={'#1E1E1E'} bg={'#fff'}/>
+      <ButtonWithArrow path='/auth' color={'#1E1E1E'} bg={'#fff'}/>
     </Stack>
   );
 };

@@ -2,7 +2,7 @@ import { styled } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 
 const SNavigationElement = styled(NavLink)(() => ({
-  fontSize: 30,
+  fontSize: '20px',
   fontFamily:"Arial",
   fontWeight: 'bold',
   textTransform: "capitalize",

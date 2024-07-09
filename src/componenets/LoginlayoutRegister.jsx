@@ -29,7 +29,7 @@ const LoginlayoutRegister = () => {
         style={{
           width: "5px",
           height: "30px",
-          backgroundColor: "#424242",
+          backgroundColor: "#D9D9D9",
           borderRadius: "10px",
         }}
       ></div>
