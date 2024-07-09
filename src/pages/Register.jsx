@@ -2,8 +2,16 @@ import React from 'react'
 import InputComponent from '../componenets/InputComponent';
 import { Stack, Typography } from '@mui/material';
 import ButtonComponent from '../componenets/ButtonComponent';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
+const NAvigte = useNavigate()
+
+
+const click = ()=>{
+NAvigte("/home");
+}
+
   return (
     <Stack
       sx={{
@@ -25,12 +33,13 @@ const Register = () => {
       >
         <Typography
           sx={{ fontSize: "40px", fontWeight: "bold", color: "#424242" }}
+          
         >
           Register
         </Typography>
         <InputComponent label={"Enter your Email"} />
         <InputComponent label={"Enter your name"} />
-        <InputComponent label={"+02"} />
+        <InputComponent label={"+ 20"} />
         <InputComponent label={"Enter your password"} />
       </Stack>
 
@@ -43,7 +52,7 @@ const Register = () => {
           gap: "4rem",
         }}
       >
-        <ButtonComponent text={"Login"} />
+        <ButtonComponent text={"Register"} path={'/home'}/>
         <Typography
           sx={{
             textDecoration: "underline",
