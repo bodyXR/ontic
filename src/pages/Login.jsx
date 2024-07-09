@@ -55,7 +55,7 @@ const Login = () => {
             gap: "2rem",
           }}
         >
-          <ButtonComponent text={"Login"} />
+          <ButtonComponent path={'/home'} text={"Login"} />
           <Typography
             sx={{
               color: "blue",
