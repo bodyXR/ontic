@@ -9,6 +9,7 @@ import SingleOngoingCourse from "./pages/SingleOngoingCourse";
 import Courses from "./pages/Courses";
 import Login from "./pages/Login";
 import AuthLayout from "./componenets/AuthLayout";
+import Videos from "./pages/Videos";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       </Route>
       <Route path="/home" element={<Home />} />
       <Route path="/courses" element={<Courses />} />
+      <Route path="/videos" element={<Videos />} />
       <Route path="/single-course" element={<SingleCourse />} />
       <Route path="/single-ongoing-course" element={<SingleOngoingCourse />} />
     </Routes>
