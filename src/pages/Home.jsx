@@ -1,17 +1,20 @@
-import { Stack, TextField, Typography } from "@mui/material";
+import { Button, Stack, TextField, Typography } from "@mui/material";
 import React from "react";
-
 import menu from "../assets/menu.png";
 import bill from "../assets/bill.png";
 import user from "../assets/user.png";
 import rect from "../assets/rect_bg.png";
 import enrolledCourse from "../assets/enrolled-course.png";
 import course from "../assets/course.png";
+
 import { Link } from "react-router-dom";
+import Footer from "../componenets/Footer";
 
 const Home = () => {
   return (
-    <Stack sx={{overflowY:'scroll',overflowX:'hidden',maxHeight:'1000px'}}>
+    <Stack
+      sx={{ overflowY: "scroll", overflowX: "hidden", maxHeight: "1000px" }}
+    >
       <Stack
         sx={{
           background: "#424242",
@@ -102,7 +105,15 @@ const Home = () => {
         <Typography sx={{ color: "#A2A2A2", fontSize: "15px", ml: "30px" }}>
           3 Enrolled courses
         </Typography>
-        <Stack sx={{ flexDirection: "row", ml: "15px", mt: "10px" , width:'360px',overflow:'scroll'}}>
+        <Stack
+          sx={{
+            flexDirection: "row",
+            ml: "15px",
+            mt: "10px",
+            width: "360px",
+            overflow: "scroll",
+          }}
+        >
           <Link to="/single-ongoing-course">
             <img
               src={enrolledCourse}
@@ -148,26 +159,26 @@ const Home = () => {
         <Typography sx={{ color: "#A2A2A2", fontSize: "15px", ml: "30px" }}>
           329 Available
         </Typography>
-        <Stack sx={{ flexDirection: "row", ml: "15px", mt: "10px" , width:'360px',overflow:'scroll'}}>
+        <Stack
+          sx={{
+            flexDirection: "row",
+            ml: "15px",
+            mt: "10px",
+            width: "360px",
+            overflow: "scroll",
+          }}
+        >
           <Link to="/single-course">
-            <img
-              src={course}
-              style={{ width: "240px", objectFit: "cover" }}
-            />
+            <img src={course} style={{ width: "240px", objectFit: "cover" }} />
           </Link>
           <Link to="/single-course">
-            <img
-              src={course}
-              style={{ width: "240px", objectFit: "cover" }}
-            />
+            <img src={course} style={{ width: "240px", objectFit: "cover" }} />
           </Link>
           <Link to="/single-course">
-            <img
-              src={course}
-              style={{ width: "240px", objectFit: "cover" }}
-            />
+            <img src={course} style={{ width: "240px", objectFit: "cover" }} />
           </Link>
         </Stack>
+        <Footer />
       </Stack>
     </Stack>
   );
